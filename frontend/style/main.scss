@@ -1,0 +1,77 @@
+
+/* GENERAL (sreen 1080x810 */
+@font-face {
+    font-family: 'Cream cake';
+    src: url(/frontend/font/Cream\ Cake.otf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(/frontend/font/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Autography';
+    src: url(/frontend/font/Autography.otf);
+}
+.roboto{
+    font-family: 'Roboto';
+}
+/* INDEX */
+
+#bg_index{
+    background-image:url(/frontend/images/bg_index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+h1{
+    font-family: 'Cream cake';
+    text-align: center;
+    font-size: 120px;
+    color: white;
+    font-family: 'Cream cake';
+    margin: 0px;
+}
+
+
+main{
+    h2{
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        font-family: 'Autography';
+     }
+
+     #box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        margin-top: 20px;
+
+        .bloc_sommaire{
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 70%;
+            height: 55px;
+            border-radius: 25px;
+            margin: 15px;
+            &:hover{
+                background-color: white;
+                font-weight: bold;
+            }
+
+            text-align: center;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+         }
+
+         a{
+            text-decoration: none;
+            color: black;
+         }
+     }
+}

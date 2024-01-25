@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./style/main.scss:./style/style.css"
+    "compile": "sass frontend/style/main.scss frontend/style/style.css --watch "
   },
   "repository": {
     "type": "git",
@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/ines-lmahdi/cuisto-mas/issues"
   },
-  "homepage": "https://github.com/ines-lmahdi/cuisto-mas#readme",
-  "dependencies": {
-    "sass": "^1.69.7"
-  }
+  "homepage": "https://github.com/ines-lmahdi/cuisto-mas#readme"
 }
