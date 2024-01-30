@@ -1,5 +1,6 @@
 
 /* GENERAL (sreen 1080x810 */
+
 @font-face {
     font-family: 'Cream cake';
     src: url(/frontend/font/Cream\ Cake.otf);
@@ -15,26 +16,35 @@
 .roboto{
     font-family: 'Roboto';
 }
-/* INDEX */
 
-#bg_index{
+.bg_index{
     background-image:url(/frontend/images/bg_index.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
 }
-h1{
-    font-family: 'Cream cake';
-    text-align: center;
-    font-size: 120px;
-    color: white;
-    font-family: 'Cream cake';
-    margin: 0px;
+.bg_grey{
+    background-color: #2b2e2c;
 }
+.spoon_menu{
+    color: rgb(220, 156, 60);
+    font-size: 45px;
+    display: flex;
+    justify-content: end;
+}
+/* INDEX */
 
 
-main{
+#page_index{
+    h1{
+        font-family: 'Cream cake';
+        text-align: center;
+        font-size: 120px;
+        color: white;
+        font-family: 'Cream cake';
+        margin: 0px;
+    }
     h2{
         text-align: center;
         font-size: 50px;
@@ -74,4 +84,37 @@ main{
             color: black;
          }
      }
+}
+
+#page_add_recipe{
+    header{
+        h1{
+            text-align: center;
+        }
+    }
+    main{
+        #recite{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            #left_side{
+                #add_image{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 30px;
+                    background-color: rgba(245, 245, 220, 0.5);
+                }
+            }
+            #right_side{
+                width: 60%;
+                background-color: rgba(245, 245, 220, 0.5);
+                border-radius: 30px;
+                padding: 20px;
+            }
+
+        }
+    }
+
+
 }

@@ -15,15 +15,26 @@
   font-family: "Roboto";
 }
 
-/* INDEX */
-#bg_index {
+.bg_index {
   background-image: url(/frontend/images/bg_index.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-h1 {
+.bg_grey {
+  background-color: #2b2e2c;
+}
+
+.spoon_menu {
+  color: rgb(220, 156, 60);
+  font-size: 45px;
+  display: flex;
+  justify-content: end;
+}
+
+/* INDEX */
+#page_index h1 {
   font-family: "Cream cake";
   text-align: center;
   font-size: 120px;
@@ -31,14 +42,13 @@ h1 {
   font-family: "Cream cake";
   margin: 0px;
 }
-
-main h2 {
+#page_index h2 {
   text-align: center;
   font-size: 50px;
   color: white;
   font-family: "Autography";
 }
-main #box {
+#page_index #box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -46,7 +56,7 @@ main #box {
   padding: 20px;
   margin-top: 20px;
 }
-main #box .bloc_sommaire {
+#page_index #box .bloc_sommaire {
   background-color: rgba(255, 255, 255, 0.5);
   width: 70%;
   height: 55px;
@@ -58,13 +68,34 @@ main #box .bloc_sommaire {
   align-items: center;
   justify-content: center;
 }
-main #box .bloc_sommaire:hover {
+#page_index #box .bloc_sommaire:hover {
   background-color: white;
   font-weight: bold;
 }
-main #box a {
+#page_index #box a {
   text-decoration: none;
   color: black;
+}
+
+#page_add_recipe header h1 {
+  text-align: center;
+}
+#page_add_recipe main #recite {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#page_add_recipe main #recite #left_side #add_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  background-color: rgba(245, 245, 220, 0.5);
+}
+#page_add_recipe main #recite #right_side {
+  width: 60%;
+  background-color: rgba(245, 245, 220, 0.5);
+  border-radius: 30px;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

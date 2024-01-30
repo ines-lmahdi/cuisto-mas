@@ -3,12 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/frontend/style/style.css">
     <script src="https://kit.fontawesome.com/a69e88d2f1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/font/Roboto-Regular.ttf">
     <!--<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,100&display=swap" rel="stylesheet">-->
     <title>Cuisto'mas</title>
 </head>
-<body>
+<body id="page_add_recipe" class="bg_grey">
+    <header>
+        <a href="index.html"><i class="fa-solid fa-spoon spoon_menu"></i></a>
+        <h1>Ajouter une recette</h1>
+    </header>
+    <main >
+        <div id="recite">
+            <aside id="left_side">
+                <div id="add_image">
+                    <input type="image" src="" alt="">
+                </div>
+                <div id="add_note">
+                    <div id="note_thomas">
+                        <h2> Note Thomas</h2>
+                        <div id="star_note">
+                            <i></i>
+                        </div>
+                    </div>
+                    <div id="note_ines">
+                        <h2> Note Inès</h2>
+                        <div id="star_note">
+                            <i></i>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <aside id="right_side">
+                <div id="recipe_title">
+                    <h2>Titre:</h2>
+                </div>
+                <div id="recipe_origine">
+                    <label for="origine-select">Origine</label>
+                    <select name="origine" id="origine-select">
+                        <option value="">Choisir</option>
+                        <option value="algerien">Algérien</option>
+                        <option value="américain">Americain</option>
+                        <option value="anglais">Anglais</option>
+                        <option value="chinois">Chinois</option>
+                        <option value="espagnol">Espagnol</option>
+                        <option value="français">Français</option>
+                        <option value="indien">Indien</option>
+                        <option value="italien">Italien</option>
+                        <option value="japonais">Japonais</option>
+                        <option value="marocain">Marocain</option>
+                        <option value="tunisien">Tunisien</option>
+                    </select>
+                </div>
+                <div id="recipe_type">
+                    <label for="type-select">Type de repas</label>
+                    <select name="type" id="type-select">
+                        <option value="">Choisir</option>
+                        <option value="apero">Apéro</option>
+                        <option value="entrer">Entrer</option>
+                        <option value="plat principal">Plat principal</option>
+                        <option value="dessert">Dessert</option>
+                    </select>
+                </div>
+                <div id="recipe_source">
+                    <h2>Source</h2>
+                </div>
+                <div id="recipe_ingredient">
+                    <h2>Ingredient</h2>
+                    <i>Valider</i>
+                </div>
+                <div id="recipe_texte">
+                    <h2>Recette</h2>
+                </div>
+                <div id="recipe_personne"></div>
+                    <h2>Nombre de personne</h2>
+                <div id="recipe_validation">
+                    <i class="fa-regular fa-circle-check"></i>                </div>
+            </aside>
+        </div>
+    </main>
 </body>
 </html>

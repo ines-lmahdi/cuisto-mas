@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "sass frontend/style/main.scss frontend/style/style.css --watch "
+    "sass": "sass frontend/style/main.scss frontend/style/style.css --watch "
   },
   "repository": {
     "type": "git",
