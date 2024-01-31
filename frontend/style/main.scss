@@ -17,6 +17,15 @@
     font-family: 'Roboto';
 }
 
+.silver_grey{
+    color: #C8CECAff;
+}
+.grey{
+    color:#1E2120ff;
+}
+.bg_grey{
+    background-color:#1E2120ff;
+}
 .bg_index{
     background-image:url(/frontend/images/bg_index.jpg);
     background-repeat: no-repeat;
@@ -24,15 +33,20 @@
     background-attachment: fixed;
 
 }
-.bg_grey{
-    background-color: #2b2e2c;
-}
+
 .spoon_menu{
     color: rgb(220, 156, 60);
     font-size: 45px;
     display: flex;
     justify-content: end;
 }
+
+.txt-title{
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
 /* INDEX */
 
 
@@ -69,6 +83,7 @@
             &:hover{
                 background-color: white;
                 font-weight: bold;
+                color:#1E2120ff;
             }
 
             text-align: center;
@@ -81,7 +96,8 @@
 
          a{
             text-decoration: none;
-            color: black;
+            color:#1E2120ff;
+            ;
          }
      }
 }
@@ -97,20 +113,35 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-
             #left_side{
                 #add_image{
                     width: 200px;
                     height: 200px;
                     border-radius: 30px;
-                    background-color: rgba(245, 245, 220, 0.5);
+                    background-color:rgba(200, 206, 202, 0.5);
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .cross-size{
+                        font-size: 100px;
+                    }
                 }
             }
             #right_side{
                 width: 60%;
-                background-color: rgba(245, 245, 220, 0.5);
+                background-color: rgba(200, 206, 202, 0.5);
                 border-radius: 30px;
                 padding: 20px;
+
+                #recipe_validation{
+                    display: flex;
+                    justify-content: center;
+                    .circle-size{
+                        font-size: 40px;
+                    }
+                }
             }
 
         }

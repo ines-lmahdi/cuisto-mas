@@ -12,23 +12,24 @@
 <body id="page_add_recipe" class="bg_grey">
     <header>
         <a href="index.html"><i class="fa-solid fa-spoon spoon_menu"></i></a>
-        <h1>Ajouter une recette</h1>
+        <h1 class="silver_grey">Ajouter une recette</h1>
     </header>
     <main >
         <div id="recite">
             <aside id="left_side">
                 <div id="add_image">
-                    <input type="image" src="" alt="">
+                    <i class="fa-solid fa-plus cross-size"></i>
+                    <input type="file" accept="image/*" #imageInput (change)="onFileAdded($event)">
                 </div>
                 <div id="add_note">
                     <div id="note_thomas">
-                        <h2> Note Thomas</h2>
+                        <h2 class="txt-title silver_grey"> Note Thomas</h2>
                         <div id="star_note">
                             <i></i>
                         </div>
                     </div>
                     <div id="note_ines">
-                        <h2> Note Inès</h2>
+                        <h2 class="txt-title silver_grey"> Note Inès</h2>
                         <div id="star_note">
                             <i></i>
                         </div>
@@ -37,10 +38,10 @@
             </aside>
             <aside id="right_side">
                 <div id="recipe_title">
-                    <h2>Titre:</h2>
+                    <h2 class="txt-title">Titre:</h2>
                 </div>
                 <div id="recipe_origine">
-                    <label for="origine-select">Origine</label>
+                    <label for="origine-select" class="txt-title">Origine:</label>
                     <select name="origine" id="origine-select">
                         <option value="">Choisir</option>
                         <option value="algerien">Algérien</option>
@@ -57,29 +58,30 @@
                     </select>
                 </div>
                 <div id="recipe_type">
-                    <label for="type-select">Type de repas</label>
+                    <label for="type-select" class="txt-title">Type de repas:</label>
                     <select name="type" id="type-select">
                         <option value="">Choisir</option>
                         <option value="apero">Apéro</option>
-                        <option value="entrer">Entrer</option>
+                        <option value="entrer">Entrée</option>
                         <option value="plat principal">Plat principal</option>
                         <option value="dessert">Dessert</option>
                     </select>
                 </div>
                 <div id="recipe_source">
-                    <h2>Source</h2>
+                    <h2 class="txt-title">Source:</h2>
                 </div>
                 <div id="recipe_ingredient">
-                    <h2>Ingredient</h2>
+                    <h2 class="txt-title">Ingredient:</h2>
                     <i>Valider</i>
                 </div>
                 <div id="recipe_texte">
-                    <h2>Recette</h2>
+                    <h2 class="txt-title">Recette:</h2>
                 </div>
                 <div id="recipe_personne"></div>
-                    <h2>Nombre de personne</h2>
+                    <h2 class="txt-title">Nombre de personne:</h2>
                 <div id="recipe_validation">
-                    <i class="fa-regular fa-circle-check"></i>                </div>
+                    <i class=" grey circle-size fa-regular fa-circle-check"></i>
+                </div>
             </aside>
         </div>
     </main>
