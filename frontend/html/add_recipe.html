@@ -25,24 +25,25 @@
                     <div id="note_thomas">
                         <h2 class="txt-title silver_grey"> Note Thomas</h2>
                         <div id="star_note">
-                            <i></i>
+                            <input type="range" name="" id="">
                         </div>
                     </div>
                     <div id="note_ines">
                         <h2 class="txt-title silver_grey"> Note Inès</h2>
                         <div id="star_note">
-                            <i></i>
+                            <input type="range" name="" id="">
                         </div>
                     </div>
                 </div>
             </aside>
             <aside id="right_side">
-                <div id="recipe_title">
+                <div id="recipe_title" class="flex-row flex-center">
                     <h2 class="txt-title">Titre:</h2>
+                    <input type="text" id="title" name="title" class="text-area"/>
                 </div>
-                <div id="recipe_origine">
+                <div id="recipe_origine" class="flex-row flex-center">
                     <label for="origine-select" class="txt-title">Origine:</label>
-                    <select name="origine" id="origine-select">
+                    <select name="origine" id="origine-select" class="text-area">
                         <option value="">Choisir</option>
                         <option value="algerien">Algérien</option>
                         <option value="américain">Americain</option>
@@ -57,9 +58,9 @@
                         <option value="tunisien">Tunisien</option>
                     </select>
                 </div>
-                <div id="recipe_type">
+                <div id="recipe_type" class="flex-row flex-center">
                     <label for="type-select" class="txt-title">Type de repas:</label>
-                    <select name="type" id="type-select">
+                    <select  class="text-area" name="type" id="type-select">
                         <option value="">Choisir</option>
                         <option value="apero">Apéro</option>
                         <option value="entrer">Entrée</option>
@@ -67,18 +68,28 @@
                         <option value="dessert">Dessert</option>
                     </select>
                 </div>
-                <div id="recipe_source">
+                <div id="recipe_source" class="flex-row flex-center">
                     <h2 class="txt-title">Source:</h2>
+                    <input type="url" id="" name="" class="text-area"/>
                 </div>
-                <div id="recipe_ingredient">
+                <div id="recipe_ingredient" class="flex-row flex-center">
                     <h2 class="txt-title">Ingredient:</h2>
-                    <i>Valider</i>
-                </div>
-                <div id="recipe_texte">
-                    <h2 class="txt-title">Recette:</h2>
-                </div>
-                <div id="recipe_personne"></div>
+                    <input type="text" id="" name="" class="text-area"/>
+                    <!--<i class="fa-solid fa-circle-check check"></i> -->
+                     </div>
+
+                <div id="recipe_personne" class="flex-row flex-center">
                     <h2 class="txt-title">Nombre de personne:</h2>
+                    <input type="number" id="" name="" class="text-area"/>
+                </div>
+                <div id="recipe_texte"class="flex-row flex-center">
+                    <h2 class="txt-title">Cuisiner le:</h2>
+                    <input type="date" id="" name="" class="text-area"/>
+                </div>
+                <div id="recipe_texte"class="flex-row flex-center">
+                    <h2 class="txt-title">Recette:</h2>
+                    <input type="text" id="" name="" class="text-area-recipe"/>
+                </div>
                 <div id="recipe_validation">
                     <i class=" grey circle-size fa-regular fa-circle-check"></i>
                 </div>
