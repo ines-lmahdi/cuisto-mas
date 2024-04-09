@@ -1,0 +1,25 @@
+{
+  "name": "cuistomas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass frontend/style/main.scss frontend/style/style.css --watch ",
+    "start": "nodemon backend/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ines-lmahdi/cuisto-mas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ines-lmahdi/cuisto-mas/issues"
+  },
+  "homepage": "https://github.com/ines-lmahdi/cuisto-mas#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}

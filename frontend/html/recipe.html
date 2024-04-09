@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/frontend/style/style.css">
     <script src="https://kit.fontawesome.com/a69e88d2f1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/font/Roboto-Regular.ttf">
-    <!--<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,100&display=swap" rel="stylesheet">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,100&display=swap" rel="stylesheet">
     <title>Cuisto'mas</title>
 </head>
-<body class="bg_grey">
+<body class="bg_grey" id="page_recipe">
     <header>
-        <i class="fa-solid fa-spoon"></i>
+        <a href="index.html"><i class="fa-solid fa-spoon spoon_menu"></i></a>
     </header>
+    <main>
+        <h1>Mes recettes</h1>
+        <div id="contenant">
+            <div id="recipe_bloc">
+                <img src="/frontend/images/Capture d’écran 2024-01-18 à 17.00.50.png" alt="" id="recipe_image">
+                <div id="recipe_right">
+                    <i class="fa-regular fa-heart"></i>
+                    <h2 id="recipe_titre">Mousaka</h2>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+<script src="/backend/index.js"></script>
 </html>

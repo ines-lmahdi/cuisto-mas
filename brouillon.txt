@@ -1,3 +1,10 @@
+PROCEDURE DE CONNEXION
+
+npm run sass
+npm start (allume le server)
+
+
+
 /* CSS HEX */
 --dim-gray: #6C7068ff;
 --silver: #C8CECAff;

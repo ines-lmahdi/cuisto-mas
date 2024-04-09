@@ -1,100 +1,108 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/frontend/style/style.css">
-    <script src="https://kit.fontawesome.com/a69e88d2f1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/font/Roboto-Regular.ttf">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/frontend/style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a69e88d2f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/font/Roboto-Regular.ttf" />
     <!--<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,100&display=swap" rel="stylesheet">-->
     <title>Cuisto'mas</title>
-</head>
-<body id="page_add_recipe" class="bg_grey">
+  </head>
+  <body id="page_add_recipe" class="bg_grey">
     <header>
-        <a href="index.html"><i class="fa-solid fa-spoon spoon_menu"></i></a>
-        <h1 class="silver_grey">Ajouter une recette</h1>
+      <a href="index.html"><i class="fa-solid fa-spoon spoon_menu"></i></a>
+      <h1 class="silver_grey">Ajouter une recette</h1>
     </header>
-    <main >
-        <div id="recite">
-            <aside id="left_side">
-                <div id="add_image">
-                    <i class="fa-solid fa-plus cross-size"></i>
-                    <input type="file" accept="image/*" #imageInput (change)="onFileAdded($event)">
-                </div>
-                <div id="add_note">
-                    <div id="note_thomas">
-                        <h2 class="txt-title silver_grey"> Note Thomas</h2>
-                        <div id="star_note">
-                            <input type="range" name="" id="">
-                        </div>
-                    </div>
-                    <div id="note_ines">
-                        <h2 class="txt-title silver_grey"> Note Inès</h2>
-                        <div id="star_note">
-                            <input type="range" name="" id="">
-                        </div>
-                    </div>
-                </div>
-            </aside>
-            <aside id="right_side">
-                <div id="recipe_title" class="flex-row flex-center">
-                    <h2 class="txt-title">Titre:</h2>
-                    <input type="text" id="title" name="title" class="text-area"/>
-                </div>
-                <div id="recipe_origine" class="flex-row flex-center">
-                    <label for="origine-select" class="txt-title">Origine:</label>
-                    <select name="origine" id="origine-select" class="text-area">
-                        <option value="">Choisir</option>
-                        <option value="algerien">Algérien</option>
-                        <option value="américain">Americain</option>
-                        <option value="anglais">Anglais</option>
-                        <option value="chinois">Chinois</option>
-                        <option value="espagnol">Espagnol</option>
-                        <option value="français">Français</option>
-                        <option value="indien">Indien</option>
-                        <option value="italien">Italien</option>
-                        <option value="japonais">Japonais</option>
-                        <option value="marocain">Marocain</option>
-                        <option value="tunisien">Tunisien</option>
-                    </select>
-                </div>
-                <div id="recipe_type" class="flex-row flex-center">
-                    <label for="type-select" class="txt-title">Type de repas:</label>
-                    <select  class="text-area" name="type" id="type-select">
-                        <option value="">Choisir</option>
-                        <option value="apero">Apéro</option>
-                        <option value="entrer">Entrée</option>
-                        <option value="plat principal">Plat principal</option>
-                        <option value="dessert">Dessert</option>
-                    </select>
-                </div>
-                <div id="recipe_source" class="flex-row flex-center">
-                    <h2 class="txt-title">Source:</h2>
-                    <input type="url" id="" name="" class="text-area"/>
-                </div>
-                <div id="recipe_ingredient" class="flex-row flex-center">
-                    <h2 class="txt-title">Ingredient:</h2>
-                    <input type="text" id="" name="" class="text-area"/>
-                    <!--<i class="fa-solid fa-circle-check check"></i> -->
-                     </div>
+    <main>
+      <div id="recite">
+        <aside id="left_side">
+          <div id="add_image">
+            <i class="fa-solid fa-plus cross-size"></i>
+            <input
+              type="file"
+              accept="image/*"
+              #imageInput
+              (change)="onFileAdded($event)"
+            />
+          </div>
+          <div id="add_note">
+            <div id="note_thomas">
+              <h2 class="txt-title silver_grey">Note Thomas</h2>
+              <div id="star_note">
+                <input type="range" name="" id="" />
+              </div>
+            </div>
+            <div id="note_ines">
+              <h2 class="txt-title silver_grey">Note Inès</h2>
+              <div id="star_note">
+                <input type="range" name="" id="" />
+              </div>
+            </div>
+          </div>
+        </aside>
+        <aside id="right_side">
+          <div id="recipe_title" class="flex-row flex-center">
+            <h2 class="txt-title">Titre:</h2>
+            <input type="text" id="title" name="title" class="text-area" />
+          </div>
+          <div id="recipe_origine" class="flex-row flex-center">
+            <label for="origine-select" class="txt-title">Origine:</label>
+            <select name="origine" id="origine-select" class="text-area">
+              <option value="">Choisir</option>
+              <option value="algerien">Algérien</option>
+              <option value="américain">Americain</option>
+              <option value="anglais">Anglais</option>
+              <option value="chinois">Chinois</option>
+              <option value="espagnol">Espagnol</option>
+              <option value="français">Français</option>
+              <option value="indien">Indien</option>
+              <option value="italien">Italien</option>
+              <option value="japonais">Japonais</option>
+              <option value="marocain">Marocain</option>
+              <option value="tunisien">Tunisien</option>
+            </select>
+          </div>
+          <div id="recipe_type" class="flex-row flex-center">
+            <label for="type-select" class="txt-title">Type de repas:</label>
+            <select class="text-area" name="type" id="type-select">
+              <option value="">Choisir</option>
+              <option value="apero">Apéro</option>
+              <option value="entrer">Entrée</option>
+              <option value="plat principal">Plat principal</option>
+              <option value="dessert">Dessert</option>
+            </select>
+          </div>
+          <div id="recipe_source" class="flex-row flex-center">
+            <h2 class="txt-title">Source:</h2>
+            <input type="url" id="" name="" class="text-area" />
+          </div>
+          <div id="recipe_ingredient" class="flex-row flex-center">
+            <h2 class="txt-title">Ingrédients:</h2>
+            <input type="text" id="" name="" class="text-area" />
+            <!--<i class="fa-solid fa-circle-check check"></i> -->
+          </div>
 
-                <div id="recipe_personne" class="flex-row flex-center">
-                    <h2 class="txt-title">Nombre de personne:</h2>
-                    <input type="number" id="" name="" class="text-area"/>
-                </div>
-                <div id="recipe_texte"class="flex-row flex-center">
-                    <h2 class="txt-title">Cuisiner le:</h2>
-                    <input type="date" id="" name="" class="text-area"/>
-                </div>
-                <div id="recipe_texte"class="flex-row flex-center">
-                    <h2 class="txt-title">Recette:</h2>
-                    <input type="text" id="" name="" class="text-area-recipe"/>
-                </div>
-                <div id="recipe_validation">
-                    <i class=" grey circle-size fa-regular fa-circle-check"></i>
-                </div>
-            </aside>
-        </div>
+          <div id="recipe_personne" class="flex-row flex-center">
+            <h2 class="txt-title">Nombre de personnes:</h2>
+            <input type="number" id="" name="" class="text-area" />
+          </div>
+          <div id="recipe_texte" class="flex-row flex-center">
+            <h2 class="txt-title">Cuisiné le:</h2>
+            <input type="date" id="" name="" class="text-area" />
+          </div>
+          <div id="recipe_texte" class="flex-row flex-center">
+            <h2 class="txt-title">Recette:</h2>
+            <input type="text" id="" name="" class="text-area-recipe" />
+          </div>
+          <div id="recipe_validation">
+            <i class="grey circle-size fa-regular fa-circle-check"></i>
+          </div>
+        </aside>
+      </div>
     </main>
-</body>
+  </body>
 </html>

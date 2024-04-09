@@ -1,173 +1,211 @@
-
 /* GENERAL (sreen 1080x810 */
 
 @font-face {
-    font-family: 'Cream cake';
-    src: url(/frontend/font/Cream\ Cake.otf);
+  font-family: "Cream cake";
+  src: url(/frontend/font/Cream\ Cake.otf);
 }
 @font-face {
-    font-family: 'Roboto';
-    src: url(/frontend/font/Roboto-Regular.ttf);
+  font-family: "Roboto";
+  src: url(/frontend/font/Roboto-Regular.ttf);
 }
 @font-face {
-    font-family: 'Autography';
-    src: url(/frontend/font/Autography.otf);
+  font-family: "Autography";
+  src: url(/frontend/font/Autography.otf);
 }
-.roboto{
-    font-family: 'Roboto';
+@font-face {
+  font-family: "Autography";
+  src: url(/frontend/font/Autography.otf);
 }
-
-.silver_grey{
-    color: #C8CECAff;
-}
-.grey{
-    color:#1E2120ff;
-}
-.bg_grey{
-    background-color:#1E2120ff;
-}
-.bg_index{
-    background-image:url(/frontend/images/bg_index.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-}
-.spoon_menu{
-    color: rgb(220, 156, 60);
-    font-size: 45px;
-    display: flex;
-    justify-content: end;
+.roboto {
+  font-family: "Roboto";
 }
 
-.txt-title{
-    font-size: 20px;
-    font-family: 'Roboto';
-    font-weight: bold;
+.silver_grey {
+  color: #c8cecaff;
 }
-.flex-row{
-    display: flex;
-    flex-direction: row;
+.grey {
+  color: #1e2120ff;
 }
-.flex-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.bg_grey {
+  background-color: #1e2120ff;
+}
+.bg_index {
+  background-image: url(/frontend/images/bg_index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.spoon_menu {
+  color: rgb(220, 156, 60);
+  font-size: 45px;
+  display: flex;
+  justify-content: end;
+}
+
+.txt-title {
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* INDEX */
 
+#page_index {
+  h1 {
+    font-family: "Cream cake";
+    text-align: center;
+    font-size: 120px;
+    color: white;
+    font-family: "Cream cake";
+    margin: 0px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: "Autography";
+  }
 
-#page_index{
-    h1{
-        font-family: 'Cream cake';
-        text-align: center;
-        font-size: 120px;
-        color: white;
-        font-family: 'Cream cake';
-        margin: 0px;
+  #box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+
+    .bloc_sommaire {
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 70%;
+      height: 55px;
+      border-radius: 25px;
+      margin: 15px;
+      &:hover {
+        background-color: white;
+        font-weight: bold;
+        color: #1e2120ff;
+      }
+
+      text-align: center;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    h2{
-        text-align: center;
-        font-size: 50px;
-        color: white;
-        font-family: 'Autography';
-     }
 
-     #box{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        margin-top: 20px;
-
-        .bloc_sommaire{
-            background-color: rgba(255, 255, 255, 0.5);
-            width: 70%;
-            height: 55px;
-            border-radius: 25px;
-            margin: 15px;
-            &:hover{
-                background-color: white;
-                font-weight: bold;
-                color:#1E2120ff;
-            }
-
-            text-align: center;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-         }
-
-         a{
-            text-decoration: none;
-            color:#1E2120ff;
-            ;
-         }
-     }
+    a {
+      text-decoration: none;
+      color: #1e2120ff;
+    }
+  }
 }
 
-#page_add_recipe{
-    header{
-        h1{
-            text-align: center;
-        }
+#page_add_recipe {
+  header {
+    h1 {
+      text-align: center;
     }
-    main{
-        #recite{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            #left_side{
-                #add_image{
-                    width: 200px;
-                    height: 200px;
-                    border-radius: 30px;
-                    background-color:rgba(200, 206, 202, 0.5);
+  }
+  main {
+    #recite {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      #left_side {
+        #add_image {
+          width: 200px;
+          height: 200px;
+          border-radius: 30px;
+          background-color: rgba(200, 206, 202, 0.5);
 
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    .cross-size{
-                        font-size: 100px;
-                    }
-                }
-            }
-            #right_side{
-                width: 60%;
-                background-color: rgba(200, 206, 202, 0.5);
-                border-radius: 30px;
-                padding: 20px;
-
-                .text-area{
-                    width: 100%;
-                    height: 30px;
-                    border-radius: 20px;
-                }
-                .text-area-recipe{
-                    border-radius: 20px;
-                    width: 100%;
-                    height: 110px;
-                }
-
-                #recipe_validation{
-                    display: flex;
-                    justify-content: center;
-                    .circle-size{
-                        font-size: 40px;
-                    }
-                }
-                .check{
-                    color: rgb(3, 87, 3);
-                    font-size: 30px;
-                }
-            }
-
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .cross-size {
+            font-size: 100px;
+          }
         }
+      }
+      #right_side {
+        width: 60%;
+        background-color: rgba(200, 206, 202, 0.5);
+        border-radius: 30px;
+        padding: 20px;
+
+        .text-area {
+          width: 100%;
+          height: 30px;
+          border-radius: 20px;
+          border: 0px;
+          margin: 5px;
+        }
+        .text-area-recipe {
+          border-radius: 20px;
+          width: 100%;
+          height: 110px;
+          border: 0px;
+        }
+
+        #recipe_validation {
+          display: flex;
+          justify-content: center;
+          .circle-size {
+            font-size: 40px;
+          }
+        }
+        .check {
+          color: rgb(3, 87, 3);
+          font-size: 30px;
+        }
+      }
     }
+  }
+}
 
+#page_recipe {
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  #contenant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    #recipe_bloc {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      height: 120px;
+      background-color: grey;
+      border-radius: 20px;
+
+      #recipe_image {
+        width: 30%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px 0 0 20px;
+      }
+      #recipe_right {
+        display: flex;
+        flex-direction: row;
+        h2 {
+          margin-left: 10px;
+        }
+        .fa-heart {
+          justify-items: center;
+          //align-self:center;
+        }
+      }
+    }
+  }
 }

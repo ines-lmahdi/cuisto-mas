@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/frontend/style/style.css">
     <script src="https://kit.fontawesome.com/a69e88d2f1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/font/Roboto-Regular.ttf">
     <!--<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,100&display=swap" rel="stylesheet">-->
@@ -11,7 +11,14 @@
 </head>
 <body class="bg_grey">
     <header>
-        <i class="fa-solid fa-spoon"></i>
+        <a href="index.html"><i class="fa-solid fa-spoon spoon_menu"></i></a>
+        <h1 class="silver_grey">Rechercher une recette</h1>
     </header>
+    <main>
+        <form class="search_bar js-search-form">
+            <input type="text" id="search_bar" class="js-search-input">
+            <button>Rechercher</button>
+        </form>
+    </main>
 </body>
 </html>

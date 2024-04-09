@@ -11,6 +11,10 @@
   font-family: "Autography";
   src: url(/frontend/font/Autography.otf);
 }
+@font-face {
+  font-family: "Autography";
+  src: url(/frontend/font/Autography.otf);
+}
 .roboto {
   font-family: "Roboto";
 }
@@ -134,11 +138,14 @@
   width: 100%;
   height: 30px;
   border-radius: 20px;
+  border: 0px;
+  margin: 5px;
 }
 #page_add_recipe main #recite #right_side .text-area-recipe {
   border-radius: 20px;
   width: 100%;
   height: 110px;
+  border: 0px;
 }
 #page_add_recipe main #recite #right_side #recipe_validation {
   display: flex;
@@ -150,6 +157,40 @@
 #page_add_recipe main #recite #right_side .check {
   color: rgb(3, 87, 3);
   font-size: 30px;
+}
+
+#page_recipe h1 {
+  color: white;
+  text-align: center;
+}
+#page_recipe #contenant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#page_recipe #contenant #recipe_bloc {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 120px;
+  background-color: grey;
+  border-radius: 20px;
+}
+#page_recipe #contenant #recipe_bloc #recipe_image {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+#page_recipe #contenant #recipe_bloc #recipe_right {
+  display: flex;
+  flex-direction: row;
+}
+#page_recipe #contenant #recipe_bloc #recipe_right h2 {
+  margin-left: 10px;
+}
+#page_recipe #contenant #recipe_bloc #recipe_right .fa-heart {
+  justify-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

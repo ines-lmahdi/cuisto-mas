@@ -1,11 +1,11 @@
-const { log } = require('console');
+//const { log } = require('console');
 const express = require('express');
-
+const bodyParser = require('body-parser');
 const app = express();
 
 app.use(express.json());
 
-app.use((req,res) =>{
+/*app.use((req,res) =>{
     res.json({ message:' requete bien reçue'});
 });
 
@@ -44,7 +44,7 @@ app.use('/api/recipe',(req,res,next)=>{
     ];
     res.status(200).json(recipe);
 });
-
+*/
 //MONGODB
 
 const mongoose = require('mongoose');
